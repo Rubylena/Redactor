@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Redactor</title>
+  </head>
+  <body>
+    <h1>Text Redactor</h1>
+    <main>
+      <form>
+        <label for="inputText">Enter the text:</label>
+        <textarea id="inputText" rows="4" cols="50"></textarea><br />
+        <label for="redactWords">Words to redact (separated by space):</label>
+        <input type="text" id="redactWords" /><br />
+        <label for="replacementChar">Replacement character:</label>
+        <input type="text" id="replacementChar" value="****" /><br />
+        <div class="btn">
+          <button type="reset" id="reset">Reset</button>
+          <button type="button" id="redactButton">Redact Now</button>
+        </div>
+      </form>
+    </main>
+    <div id="output"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

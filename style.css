@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-size: 16px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  margin-bottom: 1rem;
+  color: darkgreen;
+}
+main {
+  margin: 0 auto;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+label {
+  font-weight: 600;
+}
+input,
+textarea {
+  padding: 5px;
+  border-radius: 6px;
+  font-size: 1rem;
+  border: 0.5px solid grey;
+  width: 100%;
+}
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+button {
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  font-size: 1.05rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: none;
+}
+
+#redactButton:hover {
+  background-color: forestgreen;
+  color: aliceblue;
+}
+#reset:hover {
+  background-color: rgb(161, 11, 11);
+  color: aliceblue;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.output {
+  border: 1px dashed forestgreen;
+  border-radius: 10px;
+  margin-top: 2rem;
+  padding: 1rem;
+  line-height: 26px;
+}
+
+.output-text {
+  text-align: center;
+}
+
+@media all and (max-width: 568px) {
+  body {
+    height: 100%;
+    padding: 1rem;
+  }
+
+  .btn {
+    flex-direction: column-reverse;
+  }
+
+  .output {
+    padding: 0.5rem;
+    line-height: 22px;
+  }
+}
